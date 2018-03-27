@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.8 FATAL_ERROR)
 project(cmake_and_cuda LANGUAGES CXX CUDA)
 
 include(CTest)
-
+find_package(CUDA QUIET REQUIRED)
 add_library(particles STATIC
   randomize.cpp
   randomize.h
